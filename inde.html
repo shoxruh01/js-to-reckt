@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>js to reakt</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="header__top">
+            <div class="header__top-left">
+                <a href="#" class="header__link">About Us</a>
+                <a href="#" class="header__link">My Account</a>
+                <a href="#" class="header__link">Wishlist</a>
+                <a href="#" class="header__link">Order Tracking</a>
+            </div>
+
+            <div class="header__top-center">
+                <span class="header__promo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    100% Secure delivery without contacting the courier
+                </span>
+            </div>
+
+            <div class="header__top-right">
+                <span class="header__contact">
+                    Need help? Call Us: +1800900122
+                </span>
+
+                <span class="header__select">| USA |</span>
+                <span class="header__select">| INR ▼ |</span>
+            </div>
+        </div>
+
+        <div class="header__main">
+
+            <div class="header__logo">
+                <img class="logo" src="./img/Margin.png" alt="logo">
+            </div>
+
+            <div class="header__search">
+
+
+
+
+
+
+                <input type="text" id="searchInput" class="header__input" placeholder="Mahsulot qidirish...">
+
+
+
+                <button class="header__btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+            </div>
+
+            <button class="header__vendor">
+                Become Vendor →
+            </button>
+
+            <div class="header__actions">
+                <a href="#" class="header__action">
+                    <i class="fa-solid fa-code-compare"></i> Compare
+                </a>
+
+                <a href="#" class="header__action">
+                    <i class="fa-regular fa-heart"></i> Wishlist
+                </a>
+
+                <a href="#" class="header__action header__action--cart">
+                    <a href="./2index.html"> <i class="fa-solid fa-cart-shopping"></i> Cart
+                    </a></a>
+
+                <a href="#" class="header__action">
+                    <i class="fa-regular fa-user"></i> Account
+                </a>
+            </div>
+
+        </div>
+
+        <nav class="nav">
+
+            <button class="nav__categories">
+                <i class="fa-solid fa-bars"></i>
+                Browse All Categories
+            </button>
+
+            <ul class="nav__menu">
+                <li class="nav__item nav__item--active">Home</li>
+                <li class="nav__item">About</li>
+                <li class="nav__item">Shop</li>
+                <li class="nav__item">Mega Menu</li>
+                <li class="nav__item">Vendors</li>
+                <li class="nav__item">Blog</li>
+                <li class="nav__item">Pages</li>
+                <li class="nav__item">Contact</li>
+            </ul>
+
+            <div class="nav__phone">
+                <i class="fa-solid fa-headphones"></i>
+                <span>1900888123</span>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- 1page -->
+    <section class="hero">
+
+        <div class="hero__content">
+            <h1 class="hero__title">
+                Fresh Vegetables <br> Big discount
+            </h1>
+
+            <p class="hero__subtitle">
+                Sign up for the daily newsletter
+            </p>
+
+            <form class="hero__form">
+                <input type="email" class="hero__input" placeholder="Your email address">
+                <button class="hero__btn">
+                    Subscribe
+                </button>
+            </form>
+
+            <div class="hero__dots">
+                <span class="hero__dot"></span>
+                <span class="hero__dot hero__dot--active"></span>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- 2 page cartlar -->
+
+
+
+ 
+
+<div id="products" class="products"></div>
+
+
+
+
+
+
+    <!-- 4page -->
+    <section class="banners">
+        <div class="banners__container">
+            <div class="banners__item banners__item--yellow">
+                <div class="banners__content">
+                    <h3 class="banners__title">Everyday Fresh & Clean with Our Products</h3>
+                    <a href="#" class="banners__btn">Shop Now</a>
+                </div>
+                <img src="./img/b1.png" alt="Onions" class="banners__img">
+            </div>
+
+            <div class="banners__item banners__item--pink">
+                <div class="banners__content">
+                    <h3 class="banners__title">Make your Breakfast Healthy and Easy</h3>
+                    <a href="#" class="banners__btn">Shop Now</a>
+                </div>
+                <img src="./img/b2.png" alt="Juice" class="banners__img">
+            </div>
+
+            <div class="banners__item banners__item--blue">
+                <div class="banners__content">
+                    <h3 class="banners__title">The best Organic Products Online</h3>
+                    <a href="#" class="banners__btn">Shop Now</a>
+                </div>
+                <img src="./img/b3.png" alt="Vegetables" class="banners__img banners__img--large">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 5page -->
+    <section class="categories">
+        <div class="categories__header">
+            <h2 class="categories__title">Shop by Categories</h2>
+            <a href="#" class="categories__all-link">All Categories</a>
+            <div class="categories__nav">
+                <button class="categories__nav-btn">←</button>
+                <button class="categories__nav-btn">→</button>
+            </div>
+        </div>
+
+        <div class="categories__grid">
+            <div class="categories__item">
+                <div class="categories__icon-wrapper">
+                    <img src="./img/a1.png" alt="Milks" class="categories__icon">
+                </div>
+                <h4 class="categories__name">Milks and Dairies</h4>
+                <span class="categories__count">5 items</span>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__icon-wrapper">
+                    <img src="./img/a2.png" alt="Wines" class="categories__icon">
+                </div>
+                <h4 class="categories__name">Wines & Alcohol</h4>
+                <span class="categories__count">4 items</span>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__icon-wrapper">
+                    <img src="./img/a3.png" alt="Clothing" class="categories__icon">
+                </div>
+                <h4 class="categories__name">Clothing & Beauty</h4>
+                <span class="categories__count">4 items</span>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__icon-wrapper">
+                    <img src="./img/a4.png" alt="Pet Foods" class="categories__icon">
+                </div>
+                <h4 class="categories__name">Pet Foods & Toy</h4>
+                <span class="categories__count">2 items</span>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__icon-wrapper">
+                    <img src="./img/a5.png" alt="Fast food" class="categories__icon">
+                </div>
+                <h4 class="categories__name">Packaged fast food</h4>
+                <span class="categories__count">11 items</span>
+            </div>
+            <div class="categories__item">
+                <div class="categories__icon-wrapper">
+                    <img src="./img/a6.png" alt="Fast food" class="categories__icon">
+                </div>
+                <h4 class="categories__name">Packaged fast food</h4>
+                <span class="categories__count">11 items</span>
+            </div>
+            <div class="categories__item">
+                <div class="categories__icon-wrapper">
+                    <img src="./img/a7.png" alt="Fast food" class="categories__icon">
+                </div>
+                <h4 class="categories__name">Packaged fast food</h4>
+                <span class="categories__count">11 items</span>
+            </div>
+            <div class="categories__item">
+                <div class="categories__icon-wrapper">
+                    <img src="./img/a8.png" alt="Fast food" class="categories__icon">
+                </div>
+                <h4 class="categories__name">Packaged fast food</h4>
+                <span class="categories__count">11 items</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 6page -->
+
+    <section class="info">
+        <div class="info__container">
+
+            <div class="info__item">
+                <h3 class="info__title">Top Selling</h3>
+                <div class="info__line info__line--green"></div>
+            </div>
+
+            <div class="info__item">
+                <h3 class="info__title">Trending Products</h3>
+                <div class="info__line info__line--green"></div>
+            </div>
+
+            <div class="info__item">
+                <h3 class="info__title">Recently added</h3>
+                <div class="info__line info__line--green"></div>
+            </div>
+
+            <div class="info__item">
+                <h3 class="info__title">Top Rated</h3>
+                <div class="info__line info__line--green"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="products">
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section class="products">
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="products">
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="products__container">
+            <!-- COLUMN -->
+            <div class="products__column">
+                <div class="products__card">
+                    <div class="products__img-box">
+                        <img src="./img/1..png" class="products__img">
+                    </div>
+                    <div class="products__content">
+                        <h4 class="products__name">All Natural Style Chicken Meatballs</h4>
+                        <div class="products__rating">
+                            <span class="products__stars">★★★★★</span>
+                            <span class="products__count">3</span>
+                        </div>
+                        <div class="products__price-box">
+                            <span class="products__price products__price--new">$52.85</span>
+                            <span class="products__price products__price--old">$55.80</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- 8page -->
+
+    <section class="hero">
+        <div class="hero__container">
+
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Stay home & get your daily needs from our shop
+                </h1>
+
+                <p class="hero__subtitle">
+                    Start Your Daily Shopping with <span class="hero__brand">Nest Mart</span>
+                </p>
+
+                <form class="hero__form">
+                    <input type="email" placeholder="Your email address" class="hero__input">
+                    <button class="hero__btn hero__btn--green">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="hero__image-box">
+                <img src="./img/22.png" alt="delivery" class="hero__image">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- fooooteer -->
+    <footer class="footer">
+        <div class="footer__features">
+            <div class="footer__container">
+                <div class="footer__feature-item">
+                    <img src="./img/1.png" alt="" class="footer__feature-icon">
+                    <div class="footer__feature-info">
+                        <h4 class="footer__feature-title">Best prices & offers</h4>
+                        <p class="footer__feature-text">Orders $50 or more</p>
+                    </div>
+                </div>
+                <div class="footer__feature-item">
+                    <img src="./img/2.png" alt="" class="footer__feature-icon">
+                    <div class="footer__feature-info">
+                        <h4 class="footer__feature-title">Free delivery</h4>
+                        <p class="footer__feature-text">24/7 amazing services</p>
+                    </div>
+                </div>
+                <div class="footer__feature-item">
+                    <img src="./img/3.png" alt="" class="footer__feature-icon">
+                    <div class="footer__feature-info">
+                        <h4 class="footer__feature-title">Great daily deal</h4>
+                        <p class="footer__feature-text">When you sign up</p>
+                    </div>
+                </div>
+                <div class="footer__feature-item">
+                    <img src="./img/4.png" alt="" class="footer__feature-icon">
+                    <div class="footer__feature-info">
+                        <h4 class="footer__feature-title">Wide assortment</h4>
+                        <p class="footer__feature-text">Mega Discounts</p>
+                    </div>
+                </div>
+                <div class="footer__feature-item">
+                    <img src="./img/5.png" alt="" class="footer__feature-icon">
+                    <div class="footer__feature-info">
+                        <h4 class="footer__feature-title">Easy returns</h4>
+                        <p class="footer__feature-text">Within 30 days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__main">
+            <div class="footer__container">
+                <div class="footer__col footer__col--info">
+                    <img src="./img/Margin.png" alt="Nest" class="footer__logo">
+                    <p class="footer__text">Awesome grocery store website template</p>
+                    <p class="footer__contact"><strong>Address:</strong> 5171 W Campbell Ave, Kent, Utah</p>
+                    <p class="footer__contact"><strong>Call Us:</strong> (+91)-540-025-124553</p>
+                    <p class="footer__contact"><strong>Email:</strong> sale@Nest.com</p>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__subtitle">Company</h4>
+                    <ul class="footer__links">
+                        <li>About Us</li>
+                        <li>Delivery Information</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__subtitle">Account</h4>
+                    <ul class="footer__links">
+                        <li>Sign In</li>
+                        <li>View Cart</li>
+                        <li>My Wishlist</li>
+                        <li>Track My Order</li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__subtitle">Install App</h4>
+                    <p class="footer__text">From App Store or Google Play</p>
+                    <div class="footer__apps">
+                        <img src="./img/play.png" alt="" class="footer__app-img">
+                        <img src="./img/apps.png" alt="" class="footer__app-img">
+                    </div>
+                    <p class="footer__text">Secured Payment Gateways</p>
+                    <img src="./img/ICON.png" alt="" class="footer__payment-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__container">
+                <p class="footer__copy">© 2022, Nest - All rights reserved</p>
+                <div class="footer__phone">
+                    <span class="footer__number">📞1900 646 666</span>
+                    <span class="footer__label">Working 8:00 - 22:00</span>
+                </div>
+                <div class="footer__phone">
+                    <span class="footer__number">📞1900648888</span>
+                    <span class="footer__label">24/7 Support Center</span>
+                </div>
+                <img class="im" src="./img/footer.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
