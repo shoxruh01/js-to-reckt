@@ -185,9 +185,7 @@
     padding: 5px;
 }
 
-.product__thumb:hover {
-    border-color: #3BB77E;
-}
+
 
 
 .product__info {
@@ -295,9 +293,6 @@
     cursor: pointer;
 }
 
-.product__btn:hover {
-    background: #2da56a;
-}
 
 .product__icon {
     cursor: pointer;
